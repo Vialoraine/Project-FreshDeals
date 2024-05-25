@@ -1,7 +1,20 @@
-.breadcrumb > li {
-  display: inline; 
+
+.breadcrumb li {
+  display: inline;
 }
 
-.breadcrumb li+li::before {
-  content: "/ ";
+.breadcrumb li.location::before {
+  content: "> ";
+}
+
+
+.attribute a {
+  font-weight: bold;
+  color: #713d49;
+}
+
+.attribute a::after {
+  content: " x";
+  font-size: 12px;
+  vertical-align: super;
 }
